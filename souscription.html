@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta charset="UFT-8">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.js">
+    <link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Formulaire de souscritpion</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand bg-marron fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
+                        style="color: white">Association</a>
+                    <div class="dropdown-menu" style="background: rgba(229, 175, 89, 0.3)">
+                        <a class="dropdown-item font-weight-bold" href="histoire.html">Histoire</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="equipe.html">Equipe</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="mission.html">Notre mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
+                        style="color: white">Activités</a>
+                    <div class="dropdown-menu" style="background: rgba(229, 175, 89, 0.3)">
+                        <a class="dropdown-item font-weight-bold" href="formation.html">Formations</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="vente.html">Vente</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="partenaire.html" style="color: white">Partenaire</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white">Contact</a></li>
+            </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0 ml-auto d-lg-block d-none">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+        <a href="projet.html"><img id="logo3" src="logo3.png" alt="logo"></a>
+
+        <div id="titre">
+            <h1>DON</h1>
+            <p><em>"Sauver l'espoir, sauver les animaux qui sont notre espoir"</em>, -Konrad Lorenz-</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <h3>Mon don</h3>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked onclick="uneFois()">
+            <label class="form-check-label" for="exampleRadios1">
+                Je donne une fois.</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"
+                onclick="plusieurs()">
+            <label class="form-check-label" for="exampleRadios2">
+                Je donne tous les mois.
+            </label>
+        </div><br>
+        <div id="deux">
+            <label for="montant">Je fais un don de :</label>
+            <input id='montant' type="text" name="montant">
+            <label for="montant">€</label><br>
+            <input type="button" value="valider" id="submit" onclick="boutbon1()"><br><br>
+            <div id="exemple">
+                <label for="exampleFormControlInput1">Email</label>
+                <input id="adMail" type="email" class="form-control bg-clair" placeholder="name@example.com">
+            </div>
+
+        </div>
+
+
+        <form name="formulaire" id="coor" class="d-none">
+            <h3>Mes coordonnées</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Civilité</label>
+                        <select class="form-control bg-clair" id="exampleFormControlSelect1">
+                            <option>Selectionner</option>
+                            <option>Madame</option>
+                            <option>Monsieur</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nom</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="nom" value="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Prénom</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="prenom" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control bg-clair" id="exampleFormControlInput1" name="mail" value="" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Téléphone</label>
+                        <input type="phone" class="form-control bg-clair" id="exampleFormControlInput1" name="phone" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Adresse</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="adresse" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">App, esc, étage</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="app" value="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Bat, résidence</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="bat" value="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Lieu dit, boite postale</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="lieu" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Code postal</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="code" value="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Ville</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="ville" value="">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Pays</label>
+                        <input type="text" class="form-control bg-clair" id="exampleFormControlInput1" name="pays" value="">
+                    </div>
+                </div>
+            </div>
+            <input class="mt-5 mb-5 mx-auto d-block" type="button" value="envoyer" id="submit" onclick="boutbon()">
+        </form>
+
+
+
+
+        <footer>
+            <p>Association DON | 69 rue George Bress, 30900 NIMES | assos.don@gmail.com | 04.66.00.00.00.</p>
+        </footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+        <!--pour ajouter la sweet alert-->
+
+
+
+        <script>
+
+//Functions qui permettent d'afficher le formulaire complet si on est sur un don récurrent, si don occasionnel le formulaire est caché. 
+            function plusieurs() {
+                document.getElementById('coor').className = "d-block";//affiche les éléments
+                document.getElementById('submit').className = 'd-none';//cache le bouton valider du don
+                document.getElementById('exemple').className = 'd-none';
+            }
+
+            function uneFois() {
+                document.getElementById('coor').className = "d-none";//cache le formulaire
+                document.getElementById('submit').className = 'd-block';//affiche le bouton valider du don
+                document.getElementById('exemple').className = 'd-block';
+            }
+
+ //bouton qui permet de confirmer l'envoie de la somme d'argent ou de signaler le manque de montant.
+            function boutbon1() {
+                let auTotal = document.getElementById('montant').value;
+                let mailAd = document.getElementById('adMail').value;
+                if(auTotal && mailAd){
+                    swal({
+                    text: "Le montant de " + auTotal + " € a été envoyé avec succès !",
+                    icon: "success",
+                    button: "Entrez",
+                })}else{
+                    swal({
+                    text: "ATTENTION, vous n'avez pas rentré de somme ou votre adresse mail.",
+                    icon: "warning",
+                    button: "Entrez",
+                }) }
+            }
+
+
+
+//function qui permet d'envoyer le formulaire avec une alert si les cases ne sont pas remplies.
+            function boutbon() {
+                if(document.formulaire.nom.value==''){
+                    alert('Saisissez votre nom')
+                }else if(document.formulaire.prenom.value==''){
+                    alert('Saisissez votre prenom')
+                }else if(document.formulaire.mail.value==''){
+                    alert('Saisissez votre adresse mail')
+                }else if(document.formulaire.phone.value==''){
+                    alert('Saisissez votre numéro de téléphone')
+                }else if(document.formulaire.adresse.value==''){
+                    alert('Saisissez votre adresse')
+                }else if(document.formulaire.code.value==''){
+                    alert('Saisissez votre code postal')
+                }else if(document.formulaire.ville.value==''){
+                    alert('Saisissez votre ville')
+                }else if(document.formulaire.pays.value==''){
+                    alert('Saisissez votre pays')
+                }else{
+                    swal({
+                    text: "Formulaire envoyé avec succès !",
+                    icon: "success",
+                    button: "Entrez",
+                });
+                }
+            }
+
+           
+        </script>
+</body>
+
+
+</html>

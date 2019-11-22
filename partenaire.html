@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.js">
+    <link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Nos partenaires</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand bg-marron fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
+                        style="color: white">Association</a>
+                    <div class="dropdown-menu" style="background: rgba(229, 175, 89, 0.3)">
+                        <a class="dropdown-item font-weight-bold" href="histoire.html">Histoire</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="equipe.html">Equipe</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="mission.html">Notre mission</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
+                        style="color: white">Activités</a>
+                    <div class="dropdown-menu" style="background: rgba(229, 175, 89, 0.3)">
+                        <a class="dropdown-item font-weight-bold" href="formation.html">Formations</a>
+                        <hr>
+                        <a class="dropdown-item font-weight-bold" href="vente.html">Vente</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="partenaire.html" style="color: white">Partenaire</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white">Contact</a></li>
+            </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0 ml-auto d-lg-block d-none">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+        <a href="projet.html"><img id="logo3" src="logo3.png" alt="logo"></a>
+
+        <div id="titre">
+            <h1>Liste de nos partenaires</h1>
+            <p><em>"Sauver l'espoir, sauver les animaux qui sont notre espoir"</em>, -Konrad Lorenz-</p>
+
+        </div>
+        <p id="souscrire"><a href="souscription.html">Un don</a></p>
+    </header>
+
+    <main>
+        <h1>Nos partenaires</h1>
+        <p class="expli">Afin de mieux connaitre nos partenaires, vous pouvez cliquer sur les logos.</p>
+        <div id="partenaire">
+            <a href="https://www.elsie-sante.fr/pharmacies/pharmacie-chabrol-quissac" title="Pharmacia"><img id="pharm"
+                    src="pharm.png" alt="Logo partenaire"></a>
+            <legend id="pharm1">Pharmaceutica</legend>
+
+            <a href="https://www.30millionsdamis.fr/" target="_blank" title="30 millions d'amis"><img src="million.png"
+                    id="anim" alt="30 millions d'amis"></a>
+            <legend id="anim1">30 millions d'amis</legend>
+
+            <a href="https://www.wwf.fr/" target="_blank" title="WWF"><img id="wwf1" src="wwf.jpg" alt="WWF"></a>
+            <legend id="wwf2">WWF</legend>
+        </div>
+    </main>
+
+    <footer>
+        <p>Association DON | 69 rue George Bress, 30900 NIMES | assos.don@gmail.com | 04.66.00.00.00.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+
+        let part1 = document.getElementById('pharm');
+        part1.addEventListener('mouseover', pharmacie);
+        function pharmacie() {
+            if (window.confirm('Voulez vous ovrir la page de Pharmacia ?')) {
+                window.open('https://www.elsie-sante.fr/pharmacies/pharmacie-chabrol-quissac', '_blank', 'width: 200px');
+            }
+        }
+
+        let part2 = document.getElementById('anim');
+        part2.addEventListener('mouseover', million);
+        function million() {
+            if (window.confirm('Voulez vous ovrir la page de 3 millions d\'amis ?')) {
+                window.open('https://www.30millionsdamis.fr', '_blank', 'width: 200px');
+            }
+        }
+
+        let part3 = document.getElementById('wwf1');
+        part3.addEventListener('mouseover', ww);
+        function ww() {
+            if (window.confirm('Voulez vous ovrir la page de WWF ?')) {
+                window.open('https://www.wwf.fr/', '_blank', 'width: 200px');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Mansalva', cursive;
+    font-size: 5em;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+
+/*EN TETE*/
+header{
+    background-image: url("gi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+}
+
+
+
+#logo3{
+    width: 150px;
+    margin-top: 50px;
+}
+
+header h1, p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#titre > h1{
+    font-size: 3em;
+}
+
+#souscrire > a{
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+#titre > p{
+    margin-bottom: 100px
+}
+
+#souscrire{
+    background-color: #176C13;
+    padding: 10px;
+    width: 110px;
+    color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px gray, -2px -2px 4px white;
+    animation: anim_bouton 2s infinite;
+}
+
+/*BARNAV*/
+.bg-marron{
+    background: #231502;
+}
+
+.active{
+    color: orchid;
+}
+
+
+/*ACCUEIL*/
+#bienvenue{
+    font-size: 1.3em;
+}
+
+#h1_bienvenue{
+    margin-top: 0;
+}
+
+strong{
+    color: #a77c38;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 2em;
+    font-family: 'Mansalva', cursive;
+}
+
+#bienvenue > p{
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/*FOOTER*/
+footer{
+    margin-top: 100px;
+}
+
+footer > p{
+    font-size: 1em;
+}
+
+
+/*HISTOIRE*/
+.expli{
+    font-family: 'Indie Flower', cursive;
+    margin: 0 300px 100px 300px;
+    font-size: 2em;
+}
+
+#grid_hist{
+    background-color: #fcf5f4;
+background-image: url("https://www.transparenttextures.com/patterns/swirl.png");
+}
+
+#hr1{
+    margin: 100px 200px 100px 200px;
+}
+
+#table_histoire{
+    margin-left: 250px;
+    margin-right: 250px;
+    border-collapse: collapse;
+}
+
+#a2013, #a2015, #a2017, #a2019, #h4_1, #h4_3, #h4_5, #h4_7, #p_1, #p_3, #p_5, #p_7{
+    text-align: right;
+    padding-right: 30px;
+    border-right: 1px dashed black;
+}
+
+#a2014, #a2016, #a2018, #a2020, #h4_2, #h4_4, #h4_6, #h4_8,#p_2, #p_4, #p_6, #p_8{
+    text-align: left;
+    padding-left: 30px;
+    border-left: 1px dashed black;
+}
+
+/*EQUIPE*/
+img{
+    width: 60%;
+    display: block;
+    margin: 50px auto;
+}
+
+/*MISSION*/
+video{
+    display: block;
+    margin: 0 auto;
+}
+
+aside img{
+    width: 450px;
+}
+
+#aside1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 30px;
+    margin: 0 50px 0 50px;
+}
+
+#gouvernement{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#finances{
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#marches{
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+#gouvernement > p, #finances > p, #marches > p{
+    text-align: left;
+    font-size: 1.3em;
+}
+
+#gouvernement > h3, #finances > h3, #marches > h3{
+    font-size: 1.5em;
+}
+
+/*FORMATION*/
+#text_form{
+    text-align: center;
+}
+#table_formation{
+    width: 1000px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 50px 200px 0 300px;
+}
+
+#table_formation tr{
+    border: 1px solid black;
+    width: 30px;
+
+}
+
+#table_formation td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#table_formation th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*VENTE*/
+#contenu_image img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#goodies{
+    display: flex;
+    justify-content: space-around;
+}
+
+#pull > h3, #mug > h3, #cheval > h3{
+    text-align: center;
+    margin-top: 0;
+}
+
+#img1{
+    background-image: url("vetement.jpg");
+    background-size: 200px;
+    width: 200px;
+    height: 130px;
+    margin-top: 30px;
+}
+#img1:hover{
+    background-image: url("pull.jpg");
+} 
+
+#tasse{
+    background-image: url("mug.jpg");
+    background-size: 200px;
+    width: 200px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+#tasse:hover{
+    background-image: url("mug1.jpg")
+}
+
+#bois{
+    background-image: url("bois.jpg");
+    background-size: 200px;
+    width: 200px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+#bois:hover{
+    background-image: url("cheval1.jpg");
+}
+
+#goodies p{
+    margin-bottom: 0;
+}
+
+/*PARTENAIRE*/
+#partenaire{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+
+#pharm{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#pharm1{
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+#anim{
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#anim1{
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#wwf1{
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+#wwf2{
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+#partenaire > img{
+    width: 200px;
+}
+
+#partenaire > legend{
+    text-align: center;
+}
+
+/*CONTACT*/
+iframe{
+    margin-left: 30%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#coordonnees{
+    display: flex;
+    justify-content: center;
+}
+
+#adresse1{
+    margin-top: 150px;
+    font-style: italic;
+}
+
+#adresse1 p{
+    margin: 0;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 10px;
+}
+
+#prenom2{
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+#pren2{
+    grid-column: 3 / 4;
+    grid-row: 1; 
+}
+
+#nom2{
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+#nom3{
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+#mail2{
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+#email2{
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+
+#societe2{
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+#soc2{
+    grid-column: 3 / 4;
+    grid-row: 4;
+}
+
+#mess2{
+    grid-column: 2 / 3;
+    grid-row: 5;
+}
+
+#mess3{
+    grid-column: 3 / 4;
+    grid-row: 5;
+}
+
+#submit1{
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+
+/*carousel*/
+i{
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+@media all and (max-width: 1024px){
+    header{
+        background-size: 100%;
+    }
+    header h1, header p{
+        text-align: center;
+        font-size: 1.1em;
+        padding: 0;
+        color: #fcf5f4;
+    }
+
+    #titre > h1{
+        font-size: 1.8em;
+        padding: 0;
+    }
+    #logo3{
+        width: 80px;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: left;
+    }
+    nav > ul > li > a{
+        padding: 15px 20px;
+    }
+
+    h1{
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .expli{
+        font-size: 1em;
+        margin: 20px 0 20px 0;
+    }
+
+    hr{
+        margin: 20px 200px 20px 200px;
+    }
+    #table_histoire{
+        display: block;
+        margin: 5px 30px 5px 30px;
+    }
+    #table_histoire tr{
+        display: table;
+    }
+    #table_histoire td{
+        display: table-row;
+    }
+    #a2013, #a2015, #a2017, #a2019, #h4_1, #h4_3, #h4_5, #h4_7, #p_1, #p_3, #p_5, #p_7{
+        text-align: left;
+        padding-left: 30px;
+        font-size: 0.9em;
+        padding-right: 20px;
+        text-align: justify;
+        border: none;
+    }
+    #a2014, #a2016, #a2018, #a2020, #h4_2, #h4_4, #h4_6, #h4_8, #p_2, #p_4, #p_6, #p_8{
+        font-size: 0.9em;
+        border: inherit;
+        padding-right: 20px;
+        text-align: justify;
+    }
+    #a2014, #a2016, #a2018, #a2020, #a2013, #a2015, #a2017, #a2019{
+        text-decoration: underline;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    #h4_1, #h4_3, #h4_5, #h4_7, #h4_2, #h4_4, #h4_6, #h4_8{
+        margin: 0;
+        font-style: italic;
+    }
+    #p_1, #p_3, #p_5, #p_7, #p_2, #p_4, #p_6, #p_8{
+        margin: 0;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    footer > p{
+        font-size: 0.6em;
+    }
+    #bienvenue{
+        font-size: 1em;
+    }
+    
+    strong{
+        font-size: 1.5em;
+    }
+    form{
+        width: 200px;
+    }
+    .equipe{
+        font-size: 0.9em;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    body{
+       width: 100%;
+    }
+    legend{
+        font-size: 0.7em;
+    }
+    #partenaire > img{
+        width: 150px;
+    }
+    iframe{
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+    #gouvernement > p, #finances > p, #marches > p{
+        text-align: left;
+        font-size: 0.6em;
+    }
+    
+    #gouvernement > h3, #finances > h3, #marches > h3{
+        font-size: 0.8em;
+    }
+    aside img{
+        width: 250px;
+    }
+    #table_formation{
+        width: 880px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #table_formation td{
+        font-size: 0.5em;
+    }
+    #text_form{
+        font-size: 0.8em;
+    }
+}
+
+/*ANIMATION*/
+@keyframes anim_bouton{
+    from{
+        width: 110px;
+    }
+
+    50%{
+        background: linear-gradient(to left, red 0%, blue 100%);
+    }
+    to{
+        width: 110px;
+    }
+}
